@@ -13,4 +13,5 @@ public interface SecretRepository extends MongoRepository<Secret, String> {
     Optional<Secret> findByPin(String pin);
     boolean existsByPin(String pin);
 
+
 }

@@ -26,7 +26,7 @@ public class SecretService {
         secretRepository.save(secret);
     }
 
-    // Get secret text using pin
+    // Get secret text using pin ----
     public Optional<Secret> getSecretByPin(String pin) {
         return secretRepository.findByPin(pin);
     }
