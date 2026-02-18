@@ -21,7 +21,7 @@ public class MongoConfig {
                 new MappingMongoConverter(dbRefResolver, context);
 
         converter.setCustomConversions(conversions);
-        converter.setTypeMapper(new DefaultMongoTypeMapper(null)); // 🔥 removes _class
+        converter.setTypeMapper(new DefaultMongoTypeMapper(null));
         return converter;
     }
 }

@@ -14,7 +14,8 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/secret")
 @RequiredArgsConstructor
-@CrossOrigin // allow frontend calls
+
+ // allow frontend calls
 public class SecretController {
 
     private final SecretService secretService;

@@ -25,10 +25,10 @@ public class Secret {
     private String pin;
 
     private String content;
-
     @CreatedDate
-    @Indexed(expireAfter = "PT24H") // 24 hours
+    @Indexed(expireAfterSeconds = 86400) // 24 hours
     private Instant createdAt;
+
 
 }
 
